@@ -1,0 +1,20 @@
+.navbar {
+    border-radius: 0.5rem;
+}
+
+a {
+    color: black !important;
+}
+
+#description {
+    padding-top: 0.3rem !important;
+}
+
+.panel {
+    background-color: white;
+}
+
+.container-fluid {
+    width: 100%;
+}
+

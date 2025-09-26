@@ -3,3 +3,11 @@
     border-radius: 0.5rem;
     padding: 1rem;
 }
+
+.panel {
+    background-color: white;
+}
+
+.panel-block {
+    padding: 0 !important;
+}

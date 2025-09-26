@@ -1,0 +1,130 @@
+<article class="panel">
+    <div class="panel-block">
+        <div class="container-fluid">
+            <nav aria-label="main navigation" class="navbar" role="navigation">
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <div class="navbar-item">
+                            <nav aria-label="breadcrumbs" class="breadcrumb">
+                                <ul>
+                                    <li><a>Menu</a></li>
+                                    <li><a>Cadastros</a></li>
+                                    <li class="is-active"><a>Cliente</a></li>
+                                    <li class="is-active"><a>{{ client.name }}</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <a [routerLink]="['/client']" class="button is-light">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </span>
+                                        <span id="description">Voltar</span>
+                                    </a>
+                                </p>
+                                <p class="control">
+                                    <a (click)="submitForm()" class="button is-success">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                        <span id="description">Salvar</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</article>
+
+<div class="container">
+
+    <div class="columns">
+        <div class="column is-8">
+            <form [formGroup]="clientForm">
+                <article class="panel">
+                    <div class="panel-heading">Dados Pessoais</div>
+                    <div class="panel-block">
+                        <div class="form">
+                            <div class="field">
+                                <label class="label">Nome</label>
+                                <div class="control">
+                                    <input class="input" formControlName="name" type="text">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" formControlName="email" type="email">
+                                </div>
+                            </div>
+                            <div class="field is-grouped">
+                                <p class="control is-expanded">
+                                    <label class="label">Telefone Principal</label>
+                                    <input class="input" formControlName="phone" type="tel">
+                                </p>
+                                <p class="control is-expanded">
+                                    <label class="label">Telefone Secundário</label>
+                                    <input class="input" formControlName="secondaryPhone" type="tel">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="panel">
+                    <div class="panel-heading">Endereço</div>
+                    <div class="panel-block">
+                        <div class="form" formGroupName="address">
+                            <div class="field is-grouped">
+                                <p class="control is-expanded">
+                                    <label class="label">Rua/Avenida</label>
+                                    <input class="input" formControlName="street" type="text">
+                                </p>
+                                <p class="control">
+                                    <label class="label">Número</label>
+                                    <input class="input" formControlName="number" type="number">
+                                </p>
+                            </div>
+                            <div class="field is-grouped">
+                                <p class="control is-expanded">
+                                    <label class="label">Bairro</label>
+                                    <input class="input" formControlName="neighborhood" type="text">
+                                </p>
+                                <p class="control">
+                                    <label class="label">Complemento</label>
+                                    <input class="input" formControlName="complement" type="text">
+                                </p>
+                            </div>
+                            <div class="field is-grouped">
+                                <div class="control is-expanded">
+                                    <label class="label">Cidade</label>
+                                    <input class="input" formControlName="city" type="text">
+                                </div>
+                                <div class="control">
+                                    <label class="label">Estado</label>
+                                    <input class="input" formControlName="state" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </form>
+        </div>
+        <div class="column is-4">
+            <article class="panel">
+                <div class="panel-heading">Detalhes</div>
+                <div class="panel-block">
+
+                </div>
+            </article>
+        </div>
+    </div>
+
+</div>
+

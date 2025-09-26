@@ -1,8 +1,8 @@
-<nav class="navbar has-shadow is-link" role="navigation" aria-label="main navigation">
+<nav aria-label="main navigation" class="navbar has-shadow is-link" role="navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" routerLink="/">Oficina do Marcelo</a>
+        <a [routerLink]="['/home']" class="navbar-item">Oficina do Marcelo</a>
 
-        <a role="button" class="navbar-burger" data-target="navbarBasicExample">
+        <a class="navbar-burger" data-target="navbarBasicExample" role="button">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -10,46 +10,19 @@
         </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-menu" id="navbarBasicExample">
         <div class="navbar-start">
 
-            <a class="navbar-item">
+            <a [routerLink]="['/home']" class="navbar-item">
                 <span class="icon-text">
                     <span class="icon">
                         <i class="fa-solid fa-home">
                         </i>
                     </span>
-                    <span>Início</span>
+                    <span id="inicio">Início</span>
                 </span>
             </a>
 
-            <!-- <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link is-arrowless">
-                    Cadastros
-                </a>
-
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        <span class="icon-text">
-                            <span class="icon">
-                                <i class="fa-solid fa-user-plus">
-                                </i>
-                            </span>
-                            <span>Clientes</span>
-                        </span>
-
-                    </a>
-                    <a class="navbar-item">
-                        <span class="icon-text">
-                            <span class="icon">
-                                <i class="fa-solid fa-car-side">
-                                </i>
-                            </span>
-                            <span>Veículos</span>
-                        </span>
-                    </a>
-                </div>
-            </div> -->
         </div>
     </div>
 </nav>

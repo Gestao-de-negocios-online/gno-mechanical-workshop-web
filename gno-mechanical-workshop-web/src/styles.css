@@ -6,3 +6,48 @@ body {
     box-sizing: border-box;
     background-color: #f2f2f2 !important;
 }
+
+.is-link {
+    background-color: #2173af !important;
+}
+
+.is-danger {
+    background-color: #f12a4d !important;
+}
+
+.is-light {
+    background-color: #cbcbcb !important;
+}
+
+a.button {
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    color: white !important;
+}
+
+.panel-heading {
+    background-color: white !important;
+    color: black !important;
+    padding: 0.8rem !important;
+    font-size: 1.1rem !important;
+}
+
+.button {
+    /*color: white !important;*/
+}
+
+a.button.is-success {
+    /*color: white !important;*/
+}
+
+.field {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+}
+
+label.label {
+    font-size: 0.8rem !important;
+}
